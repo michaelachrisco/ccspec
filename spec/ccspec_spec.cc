@@ -12,6 +12,7 @@ namespace matchers {
 
 extern ExampleGroup* eq_spec;
 extern ExampleGroup* be_spec;
+extern ExampleGroup* bead_sort;
 
 }  // namespace matchers
 }  // namespace spec
@@ -23,6 +24,7 @@ int main() {
   ExampleGroup* example_groups[] = {
     spec::matchers::be_spec,
     spec::matchers::eq_spec,
+    spec::matchers::bead_sort,
   };
   bool succeeded = true;
   for (auto example_group : example_groups) {
